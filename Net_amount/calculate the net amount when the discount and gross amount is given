@@ -1,0 +1,21 @@
+import java.util.*;
+public class net_amount {
+    public static void main(String[] args) {
+        Scanner in=new Scanner (System.in);
+        double net_amount;
+        int amount=in.nextInt();
+        if(amount<=1000){
+            net_amount=(amount-(amount*0/100));
+            System.out.println(net_amount);
+        }
+        else if(amount>=1001&&amount<=5000){
+            net_amount=(amount-(amount*5/100));
+            System.out.printf("%.2f",net_amount);
+        }
+        else if(amount>=30000){
+            net_amount=(amount-((amount*15/100)+(amount*2/100)));
+            System.out.printf("%.2f",net_amount);
+          }
+    }
+    
+}
